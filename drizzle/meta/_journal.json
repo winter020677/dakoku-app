@@ -8,6 +8,13 @@
       "when": 1794716069671,
       "tag": "0000_clean_the_hood",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795702535652,
+      "tag": "0001_cooing_spot",
+      "breakpoints": true
     }
   ]
 }
