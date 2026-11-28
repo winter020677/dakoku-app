@@ -1,5 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 import LoginButton from "./login-button";
+import { clockIn } from "./action";
 
 export default async function Home() {
   const sql = neon(process.env.DATABASE_URL!);
@@ -8,6 +9,9 @@ export default async function Home() {
     <main>
       <p>DBの時刻：{String(rows[0].now)}</p>
       <LoginButton />
+      <form action={clockIn}>
+        <button>出勤</button>
+      </form>
     </main>
   );
 }
